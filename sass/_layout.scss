@@ -1,0 +1,24 @@
+main {
+  overflow: hidden;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  background: url('../img/bg-main.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {    
+    flex: 1;
+  }
+}
+
+.container {
+  width: $container-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+

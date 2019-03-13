@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url("../fonts/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url("../fonts/Quicksand-Medium.woff2") format("woff2"), url("../fonts/Quicksand-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url("../fonts/Quicksand-Regular.woff2") format("woff2"), url("../fonts/Quicksand-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url("../fonts/Quicksand-Light.woff2") format("woff2"), url("../fonts/Quicksand-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@keyframes fade-in-1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 html {
   line-height: 1.15;
   /* 1 */
@@ -5,7 +30,8 @@ html {
   /* 2 */ }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "Quicksand-Regular", Helvetica, Arial, sans-serif; }
 
 main {
   display: block; }
@@ -15,9 +41,15 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "Quicksand-Bold", Helvetica, Arial, sans-serif;
+  margin-top: 0; }
+
 p {
   margin-top: 0; }
+
+a {
+  text-decoration: none; }
 
 b,
 strong {
@@ -57,5 +89,40 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0; }
+
+.header__container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center; }
+.header__logo img {
+  width: 350px; }
+.header__nav ul {
+  margin: 0;
+  padding: 0; }
+.header__nav li {
+  display: inline-block; }
+
+main {
+  overflow: hidden; }
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  background: url("../img/bg-main.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .site__content {
+    flex: 1; }
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
