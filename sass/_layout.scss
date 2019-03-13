@@ -16,6 +16,10 @@ main {
   }
 }
 
+section {
+  padding: $section-padding 0;
+}
+
 .container {
   width: $container-width;
   max-width: $container-max-width;

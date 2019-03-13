@@ -1,17 +1,17 @@
 .header {
   &__container {
-    padding: 20px 0;
+    padding: 2.5em 0;
     display: flex;
     justify-content: space-between;
     width: 94%;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     align-items: center;
   }
 
   &__logo {
     img {
-      width: 350px;
+      width: 370px;
     }
   }
 
