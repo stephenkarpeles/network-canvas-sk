@@ -183,5 +183,33 @@
 }
 
 .about-block {
+  &__video-graphic {
+    height: 340px;
+    width: 100%;
+    background: #4d4d4d;
+    border-radius: 30px;
+    position: relative;
 
+    &:after {
+      content: '';
+      display: block;
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
+      position: absolute;
+      z-index: 100;
+      width: 0;
+      height: 0;
+      border-top: 40px solid transparent;
+      border-bottom: 40px solid transparent;
+      border-left: 76px solid white;
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    text-align: center;
+    
+    .grid__col-half:not(:last-of-type) {
+      margin-bottom: 1.5em;
+    }
+  }
 }
