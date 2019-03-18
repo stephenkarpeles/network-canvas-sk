@@ -6,10 +6,6 @@ if (headerTrigger) {
   headerTrigger.addEventListener('click', (e) => {
     e.preventDefault();
     document.body.classList.toggle('has-open-nav');
-    // add class to body to hide overflow when the half tablet setup is in place
-    if (header.classList.contains('has-half-tablet-setup')) {
-      document.body.classList.toggle('has-overflow-hidden-from-nav');
-    }
   });
 }
 
@@ -19,10 +15,6 @@ if (header) {
 
     if (!isClickInside && document.body.classList.contains('has-open-nav')) {
       document.body.classList.remove('has-open-nav');
-      // add class to body to hide overflow when the half tablet setup is in place
-      if (header.classList.contains('has-half-tablet-setup')) {
-        document.body.classList.remove('has-overflow-hidden-from-nav');
-      }
     }
   });
 }
