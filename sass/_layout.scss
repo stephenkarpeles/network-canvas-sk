@@ -9,7 +9,7 @@ main {
   flex-direction: column;
   background: url('../img/bg-main.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   &__content {    
     flex: 1;

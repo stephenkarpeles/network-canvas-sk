@@ -190,7 +190,7 @@ main {
   flex-direction: column;
   background: url("../img/bg-main.svg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
   .site__content {
     flex: 1; }
 
@@ -326,24 +326,6 @@ section {
         .cta-block__content:not(:last-of-type) {
           margin-bottom: 4.5em; } }
 
-.about-block__video-graphic {
-  height: 340px;
-  width: 100%;
-  background: #4d4d4d;
-  border-radius: 30px;
-  position: relative; }
-  .about-block__video-graphic:after {
-    content: '';
-    display: block;
-    top: calc(50% - 40px);
-    left: calc(50% - 40px);
-    position: absolute;
-    z-index: 100;
-    width: 0;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-left: 76px solid white; }
 @media screen and (max-width: 767px) {
   .about-block {
     text-align: center; }
