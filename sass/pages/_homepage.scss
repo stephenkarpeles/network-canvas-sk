@@ -106,6 +106,8 @@
   }
 
   @include mq(tablet, 'max-width') {
+    padding: 2em 0 3em;
+    
     &__btn-wrap {
       flex-direction: column;
     }
