@@ -9,7 +9,23 @@ main {
   flex-direction: column;
   background: url('../img/bg-main.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 50%;
+
+  @include mq(desktop-narrow, 'max-width') {
+    background-size: 100% 40%;
+  }
+
+  @include mq(ipad, 'max-width') {
+    background-size: 100% 32%;
+  }
+
+  @include mq(tablet, 'max-width') {
+    background-size: 100% 22%;
+  }
+
+  @include mq(mobile-landscape, 'max-width') {
+    background-size: 100% 25%;
+  }
 
   &__content {    
     flex: 1;

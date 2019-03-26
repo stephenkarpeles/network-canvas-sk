@@ -328,7 +328,19 @@ main {
   flex-direction: column;
   background: url("../img/bg-main.svg");
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: 100% 50%; }
+  @media screen and (max-width: 879px) {
+    .site {
+      background-size: 100% 40%; } }
+  @media screen and (max-width: 767px) {
+    .site {
+      background-size: 100% 32%; } }
+  @media screen and (max-width: 639px) {
+    .site {
+      background-size: 100% 22%; } }
+  @media screen and (max-width: 479px) {
+    .site {
+      background-size: 100% 25%; } }
   .site__content {
     flex: 1; }
 
