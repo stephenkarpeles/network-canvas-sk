@@ -16,18 +16,21 @@
   &__video-wrap {
     width: 46%;
     position: relative;
-    border: 18px solid $color-e;
-    border-radius: 18px;
-    position: relative;
     overflow: hidden;
 
     video {
-      // 101% to fix Safari border bug
-      width: 101%;
-      height: 101%;
-      object-fit: cover;
-      max-width: 101% !important;
+      border: 14px solid $color-e;
+      border-radius: 14px;
+      position: relative;
     }
+
+    // video {
+    //   // 101% to fix Safari border bug
+    //   width: 101%;
+    //   height: 101%;
+    //   object-fit: cover;
+    //   max-width: 101% !important;
+    // }
   }
 
   &__video-button {
